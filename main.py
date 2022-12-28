@@ -8,10 +8,27 @@
 # Протестируйте все возможности созданного класса 
 # с помощью модульного тестирования(unittest). 
 
+class Number:
+    def __init__(self, n1, n2, n3, n4, n5) -> None:
+        self.n1 = n1
+        self.n2 = n2
+        self.n3 = n3
+        self.n4 = n4
+        self.n5 = n5
 
+    def sumNum(self):
+        n = (self.n1, self.n2, self.n3, self.n4, self.n5)
+        return sum(n)
 
+    def averageNum(self):
+        n = (self.n1, self.n2, self.n3, self.n4, self.n5)
+        return sum(n)/5
 
+    def maxNum(self):
+        return max(self.n1, self.n2, self.n3, self.n4, self.n5)
 
+    def minNum(self):
+        return min(self.n1, self.n2, self.n3, self.n4, self.n5)
 
 
 
